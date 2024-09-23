@@ -3,6 +3,6 @@ export interface Perfumes {
   name: string;
   brand: string;
   price: number;
-  descrption:string;
+  description:string;
   available: boolean;
 }
