@@ -1,0 +1,26 @@
+body {
+
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+.perfume-detail {
+  background: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.perfume-detail h2 {
+  color: black;
+}
+
+.perfume-detail p {
+  color: #555;
+}

@@ -1,6 +1,6 @@
 <table>
   <tbody>
-  <tr *ngFor="let perfume of  perfumesList" >
+  <tr *ngFor="let perfume of  perfumesList"  (click)="selectPerfumes(perfume)" >
     <td>{{ perfume.id }}</td>
     <td>{{ perfume.name }}</td>
     <td>{{ perfume.brand }}</td>
@@ -10,5 +10,4 @@
   </tr>
   </tbody>
 </table>
-<app-perfumes-list-item > </app-perfumes-list-item>
-
+<app-perfumes-list-item [perfumes]="selectedPerfumes"> </app-perfumes-list-item>
