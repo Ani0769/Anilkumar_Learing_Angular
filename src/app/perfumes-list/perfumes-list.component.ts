@@ -31,4 +31,6 @@ export class PerfumesListComponent {
       this.perfumes = data;
     });
   }
+
+
 }

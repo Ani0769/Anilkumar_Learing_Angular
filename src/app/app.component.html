@@ -1,5 +1,6 @@
 <div class="container">
   <h2>Best Perfumes</h2>
+  <app-perfumes-list-item *ngIf="selectedperfumes" [perfumes]="selectedperfumes"></app-perfumes-list-item>
   <app-perfumes-list> </app-perfumes-list>
 
 
