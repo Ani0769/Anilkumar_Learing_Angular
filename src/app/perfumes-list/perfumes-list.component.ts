@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Perfumes} from "../Shared/perfumes";
 import {PerfumesListItemComponent} from "../perfumes-list-item/perfumes-list-item.component";
 import {NgForOf} from "@angular/common";
+import {PerfumeService} from "../services/perfume.service";
 
 @Component({
   selector: 'app-perfumes-list',
@@ -16,9 +17,11 @@ import {NgForOf} from "@angular/common";
 export class PerfumesListComponent {
 
   selectedPerfumes?: Perfumes;
-  //function to set which student to display
+
   selectPerfumes(perfumes: Perfumes): void {
     this.selectedPerfumes = perfumes;
   }
 
+  perfumes: Perfumes[] = [];
+  constructor(private perfumeService: PerfumeService) {}
 }
