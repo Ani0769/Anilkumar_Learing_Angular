@@ -19,5 +19,14 @@ export class PerfumesListComponent {
   perfumes: Perfumes[] = [];
 
   constructor(private PerfumesService: PerfumesService) {}
+  ngOnInit(): void {
+    this.loadPerfumes();
+  }
+
+  loadPerfumes(): void {
+    this.PerfumesService.getPerfumes().subscribe((data) => {
+      this.perfumes = data;
+    });
+  }
 
 }
