@@ -1,13 +1,5 @@
-<table>
-  <tbody>
-  <tr *ngFor="let perfume of  perfumesList"  (click)="selectPerfumes(perfume)" >
-    <td>{{ perfume.id }}</td>
-    <td>{{ perfume.name }}</td>
-    <td>{{ perfume.brand }}</td>
-    <td>{{ perfume.price }}</td>
-    <td>{{ perfume.description }}</td>
-    <td>{{ perfume.available ? 'In Stock' : 'Out of Stock' }}</td>
-  </tr>
-  </tbody>
-</table>
-<app-perfumes-list-item [perfumes]="selectedPerfumes"> </app-perfumes-list-item>
+<app-perfumes-list-item [perfumes]=perfumesList[1]></app-perfumes-list-item>
+<app-perfumes-list-item [perfumes]=perfumesList[2]></app-perfumes-list-item>
+<app-perfumes-list-item [perfumes]=perfumesList[3]></app-perfumes-list-item>
+<app-perfumes-list-item [perfumes]=perfumesList[4]></app-perfumes-list-item>
+
