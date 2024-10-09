@@ -22,10 +22,6 @@ export class PerfumesListComponent {
       {id: 4, name: "Homme", brand: "Dior", price: 160, description: "woody taste", available: true},
       {id: 5, name: "Man in Black", brand: "Bvlgari", price: 300, description: "fragnance of flower with agarwood", available: false}
     ]
-  selectedPerfumes?: Perfumes;
-  //function to set which student to display
-  selectPerfumes(perfumes: Perfumes): void {
-    this.selectedPerfumes = perfumes;
-  }
+
 
 }
